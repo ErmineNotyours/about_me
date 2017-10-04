@@ -7,7 +7,7 @@ alert('Welcome to yet another round of the guessing game');
 
 var user = prompt('What is your name?');
 alert('Hi ' + user + '! I am so glad you still want to play my game.');
-
+/*
 function funcQuestion1() {
   var answer1 = prompt('Did Arthur study Pascal at Washington State University?', 'Type yes or no').toLowerCase();
   console.log('Answer 1: ' + answer1);
@@ -77,7 +77,7 @@ function funcQuestion5() {
   alert('You have ' + userPoints + ' out of 7 points.');
 }
 funcQuestion5();
-
+*/
 function funcQuestion6() {
 // Number guessing question, giving the user four chances
 
@@ -85,7 +85,7 @@ function funcQuestion6() {
     var answer6 = prompt('How many years did Arthur attend Washington State University?', 'Enter a number, not necessarily a whole number.');
     if (answer6 === '2.5'){
       userPoints++;
-      alert('Correct! Arthur left WSU after three and a half years, but he is continuing his education at Code Fellows.');
+      alert('Correct! Arthur left WSU after two and a half years, but he is continuing his education at Code Fellows.');
       break;
     }else{
       //To avoid telling the user "You have 0 more chances," then ending the round:
@@ -96,7 +96,7 @@ function funcQuestion6() {
           alert('Too high. Try again, you have ' + (3 - i) + ' more chances.');
         }
       }else{
-        alert('Sorry, Arthur left WSU after three and a half years, but he is continuing his education at Code Fellows.  (Oh, YOU\'RE sorry?)');
+        alert('Sorry, Arthur left WSU after two and a half years, but he is continuing his education at Code Fellows.  (Oh, YOU\'RE sorry?)');
       }
     }
   }
@@ -106,7 +106,7 @@ funcQuestion6();
 
 function funcQuestion7() {
 // Multiple correct guessible answers from an array, six tries to get a correct answer.
-  var subjects = ['English', 'jogging', 'geology', 'Spanish'];
+  var subjects = ['english', 'jogging', 'geology', 'spanish'];
   var subjectTest = subjects;
   var subjectString = '';
   // Concatinate Subjects into a single string for printing inline in an alert.
@@ -117,7 +117,7 @@ function funcQuestion7() {
   }
   for (var i = 0; i < 6; i++){
     console.log('Before prompt, i = ' + i);
-    var answer7 = prompt('Besides computer coding what other subjects did Arthur study at WSU?', 'Enter an academic subject.');
+    var answer7 = prompt('Besides computer coding what other subjects did Arthur study at WSU?', 'Enter an academic subject.').toLowerCase();
     //Loop through each element of subjects to find a match
     var found = false;
     for (var j = 0; j < subjectTest.length; j++){
