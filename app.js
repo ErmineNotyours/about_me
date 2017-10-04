@@ -64,16 +64,19 @@ function funcQuestion4() {
 }
 funcQuestion4();
 
-var answer5 = prompt('Did Arthur\'s instructors have to program on punched cards?', 'Type yes or no').toLowerCase();
-console.log('Answer 5: ' + answer5);
+function funcQuestion5() {
+  var answer5 = prompt('Did Arthur\'s instructors have to program on punched cards?', 'Type yes or no').toLowerCase();
+  console.log('Answer 5: ' + answer5);
 
-if (answer5 === 'yes' || answer5 === 'y') {
-  userPoints++;
-  alert('Yes! In college they had to wait 24 hours before the could see the execution of their programms.  In high school, they had to wait a week.');
-}else{
-  alert('No, Actually, In college they had to wait 24 hours before the could see the execution of their programms.  In high school, they had to wait a week..');
+  if (answer5 === 'yes' || answer5 === 'y') {
+    userPoints++;
+    alert('Yes! In college they had to wait 24 hours before the could see the execution of their programms.  In high school, they had to wait a week.');
+  }else{
+    alert('No, Actually, In college they had to wait 24 hours before the could see the execution of their programms.  In high school, they had to wait a week..');
+  }
+  alert('You have ' + userPoints + ' out of 7 points.');
 }
-alert('You have ' + userPoints + ' out of 7 points.');
+funcQuestion5();
 
 // Number guessing question, giving the user four chances
 
