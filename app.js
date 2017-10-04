@@ -78,28 +78,31 @@ function funcQuestion5() {
 }
 funcQuestion5();
 
+function funcQuestion6() {
 // Number guessing question, giving the user four chances
 
-for (var i = 0; i < 4; i++) {
-  var answer6 = prompt('How many years did Arthur attend Washington State University?', 'Enter a number, not necessarily a whole number.');
-  if (answer6 === '2.5'){
-    userPoints++;
-    alert('Correct! Arthur left WSU after three and a half years, but he is continuing his education at Code Fellows.');
-    break;
-  }else{
-    //To avoid telling the user "You have 0 more chances," then ending the round:
-    if (i < 3){
-      if (answer6 < '2.5'){
-        alert('Too low. Try again, you have ' + (3 - i) + ' more chances.');
-      }else{
-        alert('Too high. Try again, you have ' + (3 - i) + ' more chances.');
-      }
+  for (var i = 0; i < 4; i++) {
+    var answer6 = prompt('How many years did Arthur attend Washington State University?', 'Enter a number, not necessarily a whole number.');
+    if (answer6 === '2.5'){
+      userPoints++;
+      alert('Correct! Arthur left WSU after three and a half years, but he is continuing his education at Code Fellows.');
+      break;
     }else{
-      alert('Sorry, Arthur left WSU after three and a half years, but he is continuing his education at Code Fellows.  (Oh, YOU\'RE sorry?)');
+      //To avoid telling the user "You have 0 more chances," then ending the round:
+      if (i < 3){
+        if (answer6 < '2.5'){
+          alert('Too low. Try again, you have ' + (3 - i) + ' more chances.');
+        }else{
+          alert('Too high. Try again, you have ' + (3 - i) + ' more chances.');
+        }
+      }else{
+        alert('Sorry, Arthur left WSU after three and a half years, but he is continuing his education at Code Fellows.  (Oh, YOU\'RE sorry?)');
+      }
     }
   }
+  alert(user + ' you have ' + userPoints + ' out of 7 points.');
 }
-alert(user + ' you have ' + userPoints + ' out of 7 points.');
+funcQuestion6();
 
 // Multiple correct guessible answers from an array, six tries to get a correct answer.
 var subjects = ['English', 'jogging', 'geology', 'Spanish'];
