@@ -50,16 +50,19 @@ function funcQuestion3() {
 }
 funcQuestion3();
 
-var answer4 = prompt('Did Arthur have to program on punched cards?', 'Type yes or no').toLowerCase();
-console.log('Answer 4: ' + answer4);
+function funcQuestion4() {
+  var answer4 = prompt('Did Arthur have to program on punched cards?', 'Type yes or no').toLowerCase();
+  console.log('Answer 4: ' + answer4);
 
-if (answer4 === 'no' || answer4 === 'n') {
-  userPoints++;
-  alert('Yes, no is true.  I\'m not that old.');
-}else{
-  alert('Wrong! How old do you think I am?');
+  if (answer4 === 'no' || answer4 === 'n') {
+    userPoints++;
+    alert('Yes, no is true.  I\'m not that old.');
+  }else{
+    alert('Wrong! How old do you think I am?');
+  }
+  alert(user + ' you have ' + userPoints + ' out of 7 points.');
 }
-alert(user + ' you have ' + userPoints + ' out of 7 points.');
+funcQuestion4();
 
 var answer5 = prompt('Did Arthur\'s instructors have to program on punched cards?', 'Type yes or no').toLowerCase();
 console.log('Answer 5: ' + answer5);
