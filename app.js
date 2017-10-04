@@ -36,16 +36,19 @@ function funcQuestion2() {
 }
 funcQuestion2();
 
-var answer3 = prompt('Did Arthur find the solution to a bug by dreaming that he met the class professor?', 'Type yes or no').toLowerCase();
-console.log('Answer 3: ' + answer3);
+function funcQuestion3() {
+  var answer3 = prompt('Did Arthur find the solution to a bug by dreaming that he met the class professor?', 'Type yes or no').toLowerCase();
+  console.log('Answer 3: ' + answer3);
 
-if (answer3 === 'yes' || answer3 === 'y') {
-  userPoints++;
-  alert('Yes, another oddly specfic question.  He skipped dinner working on a problem, went to bed, dreamed he met the proessor, then woke up with the answer.  He then skipped breakfast to bike out to the lab to try it out.');
-}else{
-  alert('Wrong, this is another oddly specfic question.  He skipped dinner working on a problem, went to bed, dreamed he met the proessor, then woke up with the answer.  He then skipped breakfast to bike out to the lab to try it out.');
+  if (answer3 === 'yes' || answer3 === 'y') {
+    userPoints++;
+    alert('Yes, another oddly specfic question.  He skipped dinner working on a problem, went to bed, dreamed he met the proessor, then woke up with the answer.  He then skipped breakfast to bike out to the lab to try it out.');
+  }else{
+    alert('Wrong, this is another oddly specfic question.  He skipped dinner working on a problem, went to bed, dreamed he met the proessor, then woke up with the answer.  He then skipped breakfast to bike out to the lab to try it out.');
+  }
+  alert(user + ' you have ' + userPoints + ' out of 7 points.');
 }
-alert(user + ' you have ' + userPoints + ' out of 7 points.');
+funcQuestion3();
 
 var answer4 = prompt('Did Arthur have to program on punched cards?', 'Type yes or no').toLowerCase();
 console.log('Answer 4: ' + answer4);
