@@ -22,16 +22,19 @@ function funcQuestion1() {
 }
 funcQuestion1();
 
-var answer2 = prompt('Was the computer lab at WSU built into the football stadium?', 'Type yes or no').toLowerCase();
-console.log('Answer 2: ' + answer2);
+function funcQuestion2() {
+  var answer2 = prompt('Was the computer lab at WSU built into the football stadium?', 'Type yes or no').toLowerCase();
+  console.log('Answer 2: ' + answer2);
 
-if (answer2 === 'yes' || answer2 === 'y') {
-  userPoints++;
-  alert('Yes! It seems this was the closest they could get join together the jocks and the nerds. During games you could hear the roar of the crowd through the wall.');
-}else{
-  alert('False.  Another yes question.  Building the lab into the stadium was the closest way to join the jocks and the nerds.  During games you could hear the roar of the crowd through the wall.');
+  if (answer2 === 'yes' || answer2 === 'y') {
+    userPoints++;
+    alert('Yes! It seems this was the closest they could get join together the jocks and the nerds. During games you could hear the roar of the crowd through the wall.');
+  }else{
+    alert('False.  Another yes question.  Building the lab into the stadium was the closest way to join the jocks and the nerds.  During games you could hear the roar of the crowd through the wall.');
+  }
+  alert(user + ' you have ' + userPoints + ' out of 7 points.');
 }
-alert(user + ' you have ' + userPoints + ' out of 7 points.');
+funcQuestion2();
 
 var answer3 = prompt('Did Arthur find the solution to a bug by dreaming that he met the class professor?', 'Type yes or no').toLowerCase();
 console.log('Answer 3: ' + answer3);
