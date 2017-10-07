@@ -7,7 +7,7 @@ alert('Welcome to yet another round of the guessing game');
 
 var user = prompt('What is your name?');
 alert('Hi ' + user + '! I am so glad you still want to play my game.');
-/*
+
 function funcQuestion1() {
   var answer1 = prompt('Did Arthur study Pascal at Washington State University?', 'Type yes or no').toLowerCase();
   console.log('Answer 1: ' + answer1);
@@ -77,7 +77,7 @@ function funcQuestion5() {
   alert('You have ' + userPoints + ' out of 7 points.');
 }
 funcQuestion5();
-*/
+
 function funcQuestion6() {
 // Number guessing question, giving the user four chances
 
